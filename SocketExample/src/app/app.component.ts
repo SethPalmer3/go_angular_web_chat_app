@@ -4,13 +4,13 @@ import { SocketService } from "./socket.service";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'SocketExample';
 
   public messages: Array<any>;
-  public chatBox: string;
+  chatBox: string = "";
 
   public constructor(private socket: SocketService){
     this.messages = [];

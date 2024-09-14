@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SocketService } from "./socket.service";
@@ -13,7 +12,7 @@ import { SocketService } from "./socket.service";
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
+        ReactiveFormsModule
     ],
     providers: [SocketService],
     bootstrap: [AppComponent]

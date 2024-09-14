@@ -14,7 +14,7 @@
     </li>
 </ul>
 <form action="">
-    <input [(ngModel)]="chatBox" [ngModelOptions]="{standalone: true}" autocomplete="off" />
+    <input name="chatBox" ngModel [ngModelOptions]="{standalone: true}">
     <button (click)="send()">Send</button>
 </form>
 </main>
